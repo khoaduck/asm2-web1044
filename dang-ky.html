@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng ký - VOLT Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">VOLT</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="san-pham.html">Sản phẩm</a></li>
+          <li><a id="auth-link" href="dang-nhap.html">Đăng nhập</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="gio-hang.html" class="cart-icon-btn" aria-label="Giỏ hàng">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 7h12l-1.2 12.1a1 1 0 0 1-1 .9H8.2a1 1 0 0 1-1-.9L6 7z"/>
+            <path d="M9 7V6a3 3 0 0 1 6 0v1"/>
+          </svg>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div style="max-width: 480px; margin: 0 auto; background: #fff; padding: 36px; border-radius: 16px;">
+      <p class="section-label">TÀI KHOẢN</p>
+      <h1 class="section-title">Đăng ký</h1>
+
+      <form id="register-form" novalidate>
+        <div class="form-group">
+          <label for="reg-fullname">Họ và tên</label>
+          <input type="text" id="reg-fullname" class="form-control" placeholder="Nguyễn Văn A">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">Email</label>
+          <input type="email" id="reg-email" class="form-control" placeholder="example@gmail.com">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="reg-phone">Số điện thoại</label>
+          <input type="tel" id="reg-phone" class="form-control" placeholder="0912345678">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="reg-password">Mật khẩu</label>
+          <input type="password" id="reg-password" class="form-control" placeholder="Tối thiểu 6 ký tự">
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="reg-confirm">Xác nhận mật khẩu</label>
+          <input type="password" id="reg-confirm" class="form-control" placeholder="Nhập lại mật khẩu">
+          <span class="error-message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px;">ĐĂNG KÝ</button>
+      </form>
+
+      <p style="margin-top: 20px; text-align: center; font-size: 0.9rem;">
+        Đã có tài khoản? <a href="dang-nhap.html" style="font-weight: 700;">Đăng nhập</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- Thứ tự nạp quan trọng -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
